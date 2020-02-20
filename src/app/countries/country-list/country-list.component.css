@@ -1,5 +1,22 @@
 .left{
     float: left;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    position: fixed;
+    margin-top: 78px;
+    margin-left: 8px;
+    overflow-y: scroll;         
+}
+.left::-webkit-scrollbar {
+    display: none;
+}
+
+.left {
+    -ms-overflow-style: none;
 }
 .top-bar{
     background-color: #111;
@@ -8,4 +25,11 @@
 }
 .float-right{
     float: right;
+}
+h2{
+    color: #ffffff;
+    display: inline-block;
+    font-family: sans-serif;
+    margin-top: 0px;
+    padding-left: 10px;
 }
