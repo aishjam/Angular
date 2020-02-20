@@ -1,0 +1,12 @@
+.left{
+    width: 25%;
+    float: left;
+}
+.top-bar{
+    background-color: #111;
+    height: 50px;
+    padding: 20px 20px 0px 0px;
+}
+.float-right{
+    float: right;
+}

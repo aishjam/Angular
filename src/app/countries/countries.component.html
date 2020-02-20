@@ -1,0 +1,9 @@
+<div>
+  <app-country-list></app-country-list>
+</div>
+<div>
+  <app-country-detail
+  *ngIf="selectedCountry"
+  [country]="selectedCountry">
+  </app-country-detail>
+</div>

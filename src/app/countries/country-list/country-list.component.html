@@ -1,0 +1,9 @@
+<div class="top-bar">
+  <input class="form-control float-right" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search">
+</div>
+<div class="left">
+  <app-country-item 
+  *ngFor="let country of countries | filter:searchText"
+  [countryDetails]="country"
+  (click)="onCountryClick(country)"></app-country-item>
+</div>

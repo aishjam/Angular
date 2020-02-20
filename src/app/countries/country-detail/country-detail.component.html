@@ -1,0 +1,54 @@
+<div class="right">
+  <img src='https://www.countryflags.io/{{country.alpha2Code}}/flat/64.png'>
+  <h1>{{country.name}}</h1>
+  <div>
+    <label>Capital:</label>
+    <p>{{country.capital}}</p>
+  </div>
+  <div>
+    <label>Region:</label>
+    <p>{{country.region}}</p>
+  </div>
+  <div>
+    <label>Sub-region:</label>
+    <p>{{country.subregion}}</p>
+  </div>
+  <div>
+    <label>Population:</label>
+    <p>{{country.population}}</p>
+  </div>
+  <div>
+    <label>Native Name:</label>
+    <p>{{country.nativeName}}</p>
+  </div>
+  <div class="m-5">
+    <label class="inline-block">Calling Codes:</label>
+    <div *ngFor="let code of country.callingCodes" class="inline-block">
+      <li>{{code}}</li>
+    </div>
+  </div>
+  <div class="m-5">
+    <label  class="inline-block">Currencies:</label>
+    <div *ngFor="let currency of country.currencies" class="inline-block">
+      <li>{{currency.name}}({{currency.symbol}})</li>
+    </div>
+  </div>
+  <div class="m-5">
+    <label class="inline-block">Borders:</label>
+    <div *ngFor="let border of country.borders" class="inline-block" >
+      <li>{{border}}</li>
+    </div>
+  </div>
+  <div class="m-5">
+    <label class="inline-block">Timezones:</label>
+    <div *ngFor="let timezone of country.timezones"  class="inline-block">
+      <li>{{timezone}}</li>
+    </div>
+  </div>
+  <div class="m-5">
+    <label class="inline-block">Languages:</label>
+    <div *ngFor="let language of country.languages"  class="inline-block">
+      <li>{{language.name}}</li>
+    </div>
+  </div>
+</div>
